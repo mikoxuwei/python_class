@@ -1,0 +1,17 @@
+people_string = '''{
+    "people": [
+        {
+            "name": "John Smith",
+            "phone": "615-555-7164",
+            "emails": ["johnsmith@gmail.com", "jsmith@hotmail.com"],
+            "has_license": false
+        },
+        {
+            "name": "Jane Doe",
+            "phone": "560-555-5153",
+            "emails": ["janedoe@gmail.com", "janeD@kmutnb.ac.th"],
+            "has_license": true
+        }
+    ]
+}
+'''
