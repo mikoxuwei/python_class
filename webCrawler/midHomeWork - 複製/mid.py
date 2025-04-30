@@ -1,4 +1,4 @@
-# cascade/access open data
+# cascade/access open data 
 import urllib.request as request
 import json
 
@@ -15,12 +15,16 @@ clist = data['result']['records']  # 根據 API 的結構，提取 "records" 部
 
 # 將資料寫入檔案
 with open('./website_data.txt', 'w', encoding='utf-8') as f:
-    for record in clist:
+    for i, record in enumerate(clist):
         # 提取需要的欄位
         website_name = record.get('WEBSITE_NM', '未知')  # 使用 .get() 方法避免 KeyError
         web_url = record.get('WEBURL', '未知')
         
         # 將資料寫入檔案
-        f.write(f"{website_name}, {web_url}\n")
+        f.write(f"網站名稱：{website_name}, 網址：{web_url}\n")
+
+         # 如果是第 2 行到第 11 行，則打印出來
+        if 1 <= i < 11:  # 索引 1 對應第 2 行，索引 10 對應第 11 行
+            print(f"網站名稱：{website_name}, 網址：{web_url}")
 
 print('done')
