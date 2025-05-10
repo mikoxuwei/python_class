@@ -12,7 +12,10 @@ plt.bar('11/01', 15, bottom=80, color='green', width=0.5)  # 11/01
 plt.bar('11/01', 25, bottom=75, color='green', width=0.1)  # 11/01
 plt.bar('11/02', 7, bottom=75, color='green', width=0.5)  # 11/02
 plt.bar('11/02', 18, bottom=65, color='green', width=0.1)  # 11/02
+plt.bar('11/03', 12, bottom=73, color='red', width=0.5)  # 11/03
+plt.bar('11/03', 20, bottom=70, color='red', width=0.1)  # 11/03
 plt.show()
+
 # import matplotlib.dates as mdates
 # from matplotlib.patches import Rectangle
 # import datetime
